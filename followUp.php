@@ -2,11 +2,45 @@
 <?php
 	include('session.php');
 	// include("dbconn.php");
-	if($_SESSION['volunteer'] == 1000){
-		$sql = "select * from bankdata limit ".$_SESSION['volunteer'].",131";
+	if($_SESSION['volunteer'] == 0){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
 	}
-	else
-		$sql = "select * from bankdata limit ".$_SESSION['volunteer'].",100";
+	else if($_SESSION['volunteer'] == 100){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
+	}
+	else if($_SESSION['volunteer'] == 200){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
+	}
+	else if($_SESSION['volunteer'] == 300){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
+	}
+	else if($_SESSION['volunteer'] == 400){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
+	}
+	else if($_SESSION['volunteer'] == 500){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
+	}
+	else if($_SESSION['volunteer'] == 600){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
+	}
+	else if($_SESSION['volunteer'] == 700){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
+	}
+	else if($_SESSION['volunteer'] == 800){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
+	}
+	else if($_SESSION['volunteer'] == 900){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+100)." order by status asc, bankId asc";
+	}
+	else if($_SESSION['volunteer'] == 1000){
+		$sql = "select * from bankdata where bankId>=".($_SESSION['volunteer']+1)." and bankId <=".($_SESSION['volunteer']+131)." order by status asc, bankId asc";
+	}
+
+	// if($_SESSION['volunteer'] == 1000){
+	// 	$sql = "select * from bankdata limit ".$_SESSION['volunteer'].",131";
+	// }
+	// else
+	// 	$sql = "select * from bankdata limit ".$_SESSION['volunteer'].",100";
 	$result = $conn->query($sql);
 //order by status asc, bankId asc
 
