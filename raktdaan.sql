@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `raktdaan`
+-- Database: `raktdaan1`
 --
 
 -- --------------------------------------------------------
@@ -1202,7 +1202,7 @@ CREATE TABLE `events` (
 
 INSERT INTO `events` (`bankId`, `bankName`, `state`, `pageUrl`) VALUES
 (3, 'asdfghjk', 'qwertyu', 'zxcvbnm'),
-(11, 'raktdaan andhra pradesh', 'andhra pradesh', 'event@andhra');
+(11, 'raktdaan1 andhra pradesh', 'andhra pradesh', 'event@andhra');
 
 -- --------------------------------------------------------
 
@@ -1221,18 +1221,18 @@ CREATE TABLE `login` (
 
 INSERT INTO `login` (`username`, `password`) VALUES
 ('ankit', 'ankit123'),
-('admin@raktdaan', 'admin@raktdaan'),
-('vol1@raktdaan', 'vol1@raktdaan'),
-('vol2@raktdaan', 'vol2@raktdaan'),
-('vol3@raktdaan', 'vol3@raktdaan'),
-('vol4@raktdaan', 'vol4@raktdaan'),
-('vol5@raktdaan', 'vol5@raktdaan'),
-('vol6@raktdaan', 'vol6@raktdaan'),
-('vol7@raktdaan', 'vol7@raktdaan'),
-('vol8@raktdaan', 'vol8@raktdaan'),
-('vol9@raktdaan', 'vol9@raktdaan'),
-('vol10@raktdaan', 'vol10@raktdaan'),
-('vol11@raktdaan', 'vol11@raktdaan');
+('admin@raktdaan1', 'admin@raktdaan1'),
+('vol1@raktdaan1', 'vol1@raktdaan1'),
+('vol2@raktdaan1', 'vol2@raktdaan1'),
+('vol3@raktdaan1', 'vol3@raktdaan1'),
+('vol4@raktdaan1', 'vol4@raktdaan1'),
+('vol5@raktdaan1', 'vol5@raktdaan1'),
+('vol6@raktdaan1', 'vol6@raktdaan1'),
+('vol7@raktdaan1', 'vol7@raktdaan1'),
+('vol8@raktdaan1', 'vol8@raktdaan1'),
+('vol9@raktdaan1', 'vol9@raktdaan1'),
+('vol10@raktdaan1', 'vol10@raktdaan1'),
+('vol11@raktdaan1', 'vol11@raktdaan1');
 
 --
 -- Indexes for dumped tables

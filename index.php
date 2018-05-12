@@ -37,7 +37,7 @@
 						<form action="" method="post">
 							<div class="form-group">
 								<label for="inputUsername">Username</label>
-								<input type="password" name="username" class="form-control" id="inputUsername" autofocus>
+								<input type="text" name="username" class="form-control" id="inputUsername" autofocus>
 							</div>
 							<div class="form-group">
 								<label for="inputPassword">Password</label>
@@ -56,6 +56,7 @@
 									<option value="800">Volunteer 9</option>
 									<option value="900">Volunteer 10</option>
 									<option value="1000">Volunteer 11</option>
+									<option value="0">None</option>
 							    </select>
 							</div>
 							<span><?php echo $error; ?></span><br><br>

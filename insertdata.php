@@ -14,9 +14,9 @@
 		}
 		
 		else if(isset($_POST["submitFollowUp"])){
-			$sql = 'UPDATE bankdata SET status = '.$_POST["status"].',eventDate1 = "'.$_POST["eventDate1"].'",eventDate2 = "'.$_POST["eventDate2"].',address1 = "'.$_POST["address1"].',address2 = "'.$_POST["address2"].',comment = "'.$_POST["comment"].'" WHERE bankdata.bankId ='. $_POST["bankId"] .';';
+			$sql = 'UPDATE bankdata SET status = '.$_POST["status"].',eventDate1 = "'.$_POST["eventDate1"].'",eventDate2 = "'.$_POST["eventDate2"].'",address1 = "'.$_POST["address1"].'",address2 = "'.$_POST["address2"].'",comment = "'.$_POST["comment"].'" WHERE bankdata.bankId = '. $_POST["bankId"] .';';
 			$conn->query($sql);
-			header("Location: folowUp.php");
+			header("Location: followUp.php");
 		}
 	}
 ?>

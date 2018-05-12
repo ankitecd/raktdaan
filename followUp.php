@@ -3,12 +3,12 @@
 	include('session.php');
 	// include("dbconn.php");
 	if($_SESSION['volunteer'] == 1000){
-		$sql = "select * from bankdata order by status asc, bankId asc limit ".$_SESSION['volunteer'].",131";
+		$sql = "select * from bankdata limit ".$_SESSION['volunteer'].",131";
 	}
 	else
-		$sql = "select * from bankdata order by status asc, bankId asc limit ".$_SESSION['volunteer'].",100";
+		$sql = "select * from bankdata limit ".$_SESSION['volunteer'].",100";
 	$result = $conn->query($sql);
-
+//order by status asc, bankId asc
 
 ?>
 <html class="no-js" lang="">
@@ -81,25 +81,25 @@
 									    </select>
 									</td>
 						        	<td class="font-weight-normal">
-						        		<form class="form-inline">
+						        		<!-- <form class="form-inline"> -->
 							        		<p style="margin-bottom: 8px;">Event 1</p>
 							        		<input type="date" class="form-control form-control-sm" style="word-wrap: break-word;min-width: 180px; max-width: 200px;" name="eventDate1" value="<?php echo $row['eventDate1'] ?>">
 							        		<p style="margin-bottom: 8px;margin-top: 8px">Event 2</p>
 							        		<input type="date" class="form-control form-control-sm" style="word-wrap: break-word;min-width: 180px; max-width: 200px;" name="eventDate2" value="<?php echo $row['eventDate2'] ?>">
-							        	</form>
+							        	<!-- </form> -->
 						        	</td>
 						        	<td class="font-weight-normal">
-						        		<form>
+						        		<!-- <form> -->
 							        		<p style="margin-bottom: 8px;">Address 1</p>
 							        		<input type="text" class="form-control form-control-sm" style="word-wrap: break-word;min-width: 180px; max-width: 200px;" name="address1" value="<?php echo $row['address1'] ?>">
 							        		<p style="margin-bottom: 8px;margin-top: 8px">Address 2</p>
 							        		<input type="text" class="form-control form-control-sm" style="word-wrap: break-word;min-width: 180px; max-width: 200px;" name="address2" value="<?php echo $row['address2'] ?>">
-							        	</form>
+							        	<!-- </form> -->
 						        	</td>
 						        	<td class="font-weight-normal">
 						        		<p style="margin-bottom: 8px;">Comment</p>
 						        		<input type="text" class="form-control form-control-sm" style="word-wrap: break-word;min-width: 180px; max-width: 200px;height: 50px;" name="comment" value="<?php echo $row['comment'] ?>"><br>
-						        		<button type='submit' colspan="2" name='submitFollowUp' class='btn btn-primary form-control-sm'>Submit</button>
+						        		<button type='submit' name='submitFollowUp' class='btn btn-primary form-control-sm'>Submit</button>
 						        	</td>
 						        </tr>
 						    </form>
